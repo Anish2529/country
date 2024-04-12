@@ -1,0 +1,30 @@
+nav {
+    height: 80px;
+    padding: 0px 80px;
+    background-color: #fff;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.darkmode{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.darkmode p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbar h1 {
+    font-weight: 900;
+}

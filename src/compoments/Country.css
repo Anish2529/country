@@ -1,0 +1,8 @@
+.countyDisplay{
+    padding: 0px 80px;
+    margin-top: 48px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+}
