@@ -15,16 +15,43 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-.darkmode{
+
+.darkmode {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.darkmode p{
+
+.darkmode p {
     font-weight: 600;
     font-size: 20px;
 }
 
 .navbar h1 {
     font-weight: 900;
+}
+
+/* Media query for responsive design */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        padding: 0px 40px; /* Adjust padding for smaller screens */
+    }
+    .navbar h1 {
+        font-size: 18px;
+    }
+    .darkmode p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        padding: 0px 20px;
+    }
+    .navbar h1 {
+        font-size: 16px;
+    }
+    .darkmode p{
+        font-size: 14px;
+    }
 }
