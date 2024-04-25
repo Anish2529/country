@@ -1,0 +1,133 @@
+.countryDetails {
+    padding: 80px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.countryInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 142px;
+    align-items: center;
+}
+
+.soloimg {
+    width: 100%;
+}
+
+.textDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px;
+}
+.info_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bordes{
+    display: flex;
+    gap: 10px;
+    align-content: flex-start;
+}
+.buttonsborders{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.borderbutton{
+    width: 100px;
+    height: 27px;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: lighter;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #0000005d;
+}
+
+.back_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0000005d;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .countryDetails {
+        padding: 40px;
+    }
+
+    .soloimg {
+        width: 100%;
+    }
+    .countryInfo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .bordes{
+        flex-direction: column;
+    }
+
+    .buttonsborders{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .countryDetails {
+        padding: 40px;
+    }
+    .soloimg {
+        width: 100%;
+    }
+   
+    .countryInfo {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+    }
+
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .bordes{
+        flex-direction: column;
+    }
+
+    .buttonsborders{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Country.css';
 import './Display.css';
 import Filter from './Filter';
+import { Link } from 'react-router-dom';
 
 export default function Dispaly() {
   const [countries, setCountries] = useState([]);
@@ -43,6 +44,7 @@ export default function Dispaly() {
       <div className="countyDisplay">
         {
           filteredData.map((country) => (
+            <Link className='link' to={`/country/${country.cca3}`}>
             <div className="country" key={country.cca3}>
               <img src={country.flags.png} alt="" />
               <div className="info">
@@ -54,6 +56,7 @@ export default function Dispaly() {
                 </div>
               </div>
             </div>
+            </Link>
           ))
         }
       </div>
